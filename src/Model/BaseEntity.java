@@ -1,5 +1,7 @@
 package Model;
 
-public class BaseEntity {
+public  class BaseEntity {
+    private Long id;
+
 
 }
