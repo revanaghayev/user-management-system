@@ -2,6 +2,7 @@ package Model;
 
 import Repository.GenericRepository;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -15,7 +16,7 @@ public class User implements GenericRepository<User> {
 
     @Override
     public List<User> findAll() {
-        return List.of();
+        return Collections.emptyList();
     }
 
     @Override

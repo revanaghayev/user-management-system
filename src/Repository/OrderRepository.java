@@ -2,6 +2,34 @@ package Repository;
 
 import Model.Order;
 
-public abstract class OrderRepository implements GenericRepository<Order> {
+import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
 
+public class OrderRepository implements GenericRepository<Order> {
+
+    @Override
+    public Optional<Order> findById(Long id) {
+        return Optional.empty();
+    }
+
+    @Override
+    public List<Order> findAll() {
+        return Collections.emptyList();
+    }
+
+    @Override
+    public void save(Order entity) {
+
+    }
+
+    @Override
+    public void update(Long id, Order entity) {
+
+    }
+
+    @Override
+    public void delete(Long id) {
+
+    }
 }

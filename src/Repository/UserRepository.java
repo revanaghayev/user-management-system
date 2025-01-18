@@ -2,6 +2,34 @@ package Repository;
 
 import Model.User;
 
-public abstract class UserRepositroy implements GenericRepository<User>{
+import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
 
+public class UserRepository implements GenericRepository<User>{
+
+    @Override
+    public Optional<User> findById(Long id) {
+        return Optional.empty();
+    }
+
+    @Override
+    public List<User> findAll() {
+        return Collections.emptyList();
+    }
+
+    @Override
+    public void save(User entity) {
+
+    }
+
+    @Override
+    public void update(Long id, User entity) {
+
+    }
+
+    @Override
+    public void delete(Long id) {
+
+    }
 }

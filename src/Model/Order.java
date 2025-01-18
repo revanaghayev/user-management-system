@@ -2,12 +2,14 @@ package Model;
 
 import Repository.GenericRepository;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
 public class Order implements GenericRepository<BaseEntity> {
     private Long userId;
     private Long productId;
+
 
     @Override
     public Optional<BaseEntity> findById(Long id) {
@@ -21,7 +23,7 @@ public class Order implements GenericRepository<BaseEntity> {
 
     @Override
     public List<BaseEntity> findAll() {
-        return List.of();
+        return Collections.emptyList();
     }
 
     @Override
@@ -31,6 +33,6 @@ public class Order implements GenericRepository<BaseEntity> {
 
     @Override
     public void delete(Long id) {
-
+        return;
     }
 }

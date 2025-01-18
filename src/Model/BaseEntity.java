@@ -2,11 +2,20 @@ package Model;
 
 import Repository.GenericRepository;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
 public class BaseEntity implements GenericRepository<BaseEntity> {
     private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     @Override
     public Optional<BaseEntity> findById(Long id) {
@@ -15,7 +24,7 @@ public class BaseEntity implements GenericRepository<BaseEntity> {
 
     @Override
     public List<BaseEntity> findAll() {
-        return List.of();
+        return Collections.emptyList();
     }
 
     @Override

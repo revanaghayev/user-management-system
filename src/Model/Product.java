@@ -2,6 +2,7 @@ package Model;
 
 import Repository.GenericRepository;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,7 +17,7 @@ public class Product implements GenericRepository<Product> {
 
     @Override
     public List<Product> findAll() {
-        return List.of();
+        return Collections.emptyList();
     }
 
     @Override
